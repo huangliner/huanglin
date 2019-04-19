@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch语句</title>
+</head>
+<body>
+    <input type="file" name="">
+</body>
+<script>
+   
+    // var arr=['background','color'];
+    // var style='background-color';
+    // var a=style.split('-');
+    // for(var i in a){
+    //     if(i==1){
+            
+    //             a[i]='Color';
+                
+    //     }
+        
+    // }
+    // console.log(a);
+    // console.log(a.join(''));
+    // var counter=0;
+    // function CheckIsNumber(value,index,arr){
+    // 	if(typeof(value)==='number'){
+    // 		return true;
+    // 	}
+    // 	else 
+    // 		return false;
+    // }
+    // var a=[2,4,{x:2,y:3},true,[5,6],8];
+    // document.write(a.every(CheckIsNumber));
+    // document.write(counter);
+
+    // function threeChars(value,index,str){
+    // 	return str.substring(index-1,index+1);
+    // }
+    // var word='Thursday';
+    // var result=[].map.call(word,threeChars);
+
+    // function checkIfPrime(value,index,arr){
+    // 	high=Math.floor(Math.sqrt(value))+1;
+    // 	for(var div=2;div<=high;div++){
+    // 		if(value %div==0){
+    // 			return false;
+    // 		}
+    // 	}
+    // 	return true;
+    // }
+    // var nums=[23,4,56,90,63,71,96];
+    // var newNums=nums.filter(checkIfPrime)
+
+//     function max(){
+//         var min=-Infinity;
+//         for(var i=0;i<arguments.length;i++){
+//             if(arguments[i]>min){
+//                 min=arguments[i];
+//             }
+//         }
+//         return min;
+//     }
+//     var a=[1,4,2,6,8,0];
+//     var maxNumber=max.apply(Object,a)
+
+//     function f(){
+//         this.a='a';
+//         this.b=function(){
+//             alert('b');
+//         }
+//     }
+//     function g(){
+//         f.call(this);
+//         alert(a);
+//     }
+//     g();
+
+//     var checkNumberRange=function(value){
+//         if(typeof value!=='number')return false;
+//         else{
+//             return value>=this.min &&value<=this.max;
+//         }
+//     }
+//     var range={min:10,max:20};
+//     var bindCheckNumberRange=checkNumberRange.bind(range);
+//     var result=bindCheckNumberRange(15);
+
+//     var displayArgs=function(val1,val2,val3,val4){
+//           return(val1+' '+val2+' '+val3+' '+val4);
+//     }
+//     var emptyObject={};
+//     var displayArgs1=displayArgs.bind(emptyObject,'a','b');
+//     var result=displayArgs1(12,23);
+    
+
+//     var obj={
+//         name:'对象1',
+//         f:function(){
+//             return this;
+//         }
+//     }
+//     obj.childObj={
+//         name:'childObj',
+//         fn:obj.f()
+//     }
+//     var obj1=obj.childObj.fn;
+//     obj1.name;
+
+
+//     function f(){
+//         if(this.constructor===arguments.callee)alert('this=实例对象');
+//         else if(this===window)alert('this=window对象');
+//         else{
+//             alert('this=其他对象\nthis.constructor='+this.constructor);
+//         }
+//     }
+//     f();  //this指向window对象
+//     new f();  //this指向实例对象
+//     f.call();   //this指向数值实例对象
+
+//     function Base(){
+//         this.m=function(){
+//             return 'base';
+//         };
+//         this.a=this.m();
+//         this.b=this.m;
+//         this.c=function(){
+//             return this.m();
+//         }
+//     }
+//     function Child(){
+//         this.m=function(){
+//             return 'child';
+//         }
+//     }
+//     Child.prototype=new Base();
+//     var child=new Child();
+
+
+
+// 求数组a=[2,4,5,6,0,1]和
+//      a.reverse()的每一项一一对应的和
+
+//      a.reverse()  ==>[1, 0, 6, 5, 4, 2]
+//      即2+1，4+1...依次类推得到[3,4,11,11,4,3]
+
+var style='background-color';
+var arr=style.split('-');
+arr[1]=arr[1].charAt(0).toUpperCase()+arr[1].substr(1);
+arr.join('');
+
+var a=[1,'a','aa',3,5];
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
